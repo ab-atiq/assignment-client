@@ -33,7 +33,7 @@ const Registration = () => {
             email: data?.user?.email,
             name: name,
           };
-          fetch("http://localhost:500/user", {
+          fetch("https://assignment-server-ruddy-mu.vercel.app/user", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -54,11 +54,14 @@ const Registration = () => {
     <form onSubmit={handleSUbmit} className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Register now!</h1>
+          <h1 className="text-5xl font-bold">Register E-shop!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aut,
+            laboriosam expedita fugiat, inventore architecto magni tenetur quis,
+            illum facere sint laudantium voluptate consequuntur minus molestiae
+            perferendis ipsa dolore nesciunt accusantium eaque beatae sapiente
+            molestias excepturi reprehenderit? Beatae, sequi. Cum, odio unde
+            facere dolorem consequatur eveniet. Vel, neque ut. Consectetur?
           </p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

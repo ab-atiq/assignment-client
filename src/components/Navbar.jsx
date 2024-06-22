@@ -36,7 +36,16 @@ const Navbar = () => {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
+              <Link to={"/products"}>Products</Link>
+            </li>
+            <li>
+              <Link to={"/brands"}>Brands</Link>
+            </li>
+            <li>
               <Link to={"/about"}>About</Link>
+            </li>
+            <li>
+              <Link to={"/contact"}>Contact</Link>
             </li>
             {!user && (
               <>
@@ -50,7 +59,7 @@ const Navbar = () => {
             )}
             {user && (
               <li>
-                <Link to={"/dashboard"}>Dashboard</Link>
+                <Link to={"/dashboard/home"}>Dashboard</Link>
               </li>
             )}
             {user && (
@@ -65,7 +74,7 @@ const Navbar = () => {
             )}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">E-shop</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -73,7 +82,16 @@ const Navbar = () => {
             <Link to={"/"}>Home</Link>
           </li>
           <li>
+            <Link to={"/products"}>Products</Link>
+          </li>
+          <li>
+            <Link to={"/brands"}>Brands</Link>
+          </li>
+          <li>
             <Link to={"/about"}>About</Link>
+          </li>
+          <li>
+            <Link to={"/contact"}>Contact</Link>
           </li>
           {!user && (
             <>
@@ -87,7 +105,7 @@ const Navbar = () => {
           )}
           {user && (
             <li>
-              <Link to={"/dashboard"}>Dashboard</Link>
+              <Link to={"/dashboard/home"}>Dashboard</Link>
             </li>
           )}
         </ul>

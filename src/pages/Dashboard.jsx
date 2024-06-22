@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [userInfo, setUserInfo] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:500/user/${user?.email}`)
+    fetch(`https://assignment-server-ruddy-mu.vercel.app/user/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setUserInfo(data));
   }, [user]);
@@ -27,6 +27,8 @@ const Dashboard = () => {
       <div>
         <h1>{userInfo?.name}</h1>
         <h1>{userInfo?.email}</h1>
+        <h1>{userInfo?.age}</h1>
+        <h1>{userInfo?.mobileNumber}</h1>
       </div>
     </div>
   );

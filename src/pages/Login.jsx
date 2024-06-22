@@ -32,11 +32,9 @@ const Login = () => {
     <form onSubmit={handleSUbmit} className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
+          <h1 className="text-5xl font-bold">Login E-shop!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut minima voluptas repudiandae. A, expedita corporis. Architecto porro, consequatur dolor nihil recusandae at voluptate omnis, quaerat minima eos nisi reprehenderit minus quod odio in maiores deleniti. Ut aliquam laboriosam odio voluptas.
           </p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

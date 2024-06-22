@@ -1,7 +1,9 @@
-import { useLoaderData } from "react-router-dom";
+import toast from "react-hot-toast";
+import { Navigate, useLoaderData, useNavigate } from "react-router-dom";
 
 export default function EditProfile() {
   const data = useLoaderData();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +22,7 @@ export default function EditProfile() {
       //   email: data?.email,
     };
 
-    fetch(`http://localhost:500/user/${data?.email}`, {
+    fetch(`https://assignment-server-ruddy-mu.vercel.app/user/${data?.email}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +30,10 @@ export default function EditProfile() {
       body: JSON.stringify(userData),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        toast.success("Profile Updated Successfully");
+        navigate("/dashboard/home");
+      });
   };
   return (
     <div>
@@ -56,12 +61,18 @@ export default function EditProfile() {
         </div>
         <div className="flex flex-col">
           <label htmlFor="">User Age</label>
-          <input type="text" name="age" className="py-2 px-1 bg-slate-50 " />
+          <input
+            type="text"
+            defaultValue={data?.age}
+            name="age"
+            className="py-2 px-1 bg-slate-50 "
+          />
         </div>
         <div className="flex flex-col">
           <label htmlFor="">User Mobile</label>
           <input
             type="text"
+            defaultValue={data?.mobileNumber}
             name="mobileNumber"
             className="py-2 px-1 bg-slate-50 "
           />
