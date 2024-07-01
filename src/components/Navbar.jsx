@@ -121,7 +121,7 @@ const Navbar = () => {
         )}
         <div className="avatar">
           <div className="w-12 rounded-full border-2 border-black">
-            <img src={user?.photoURL || "/public/placeholder.jpg"} />
+            <img src={user?.photoURL || "https://via.placeholder.com/150"} />
           </div>
         </div>
       </div>
