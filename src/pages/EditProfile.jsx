@@ -22,7 +22,7 @@ export default function EditProfile() {
       //   email: data?.email,
     };
 
-    fetch(`https://assignment-server-ruddy-mu.vercel.app/user/${data?.email}`, {
+    fetch(`https://assignment-server-vhg5.onrender.com/user/${data?.email}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

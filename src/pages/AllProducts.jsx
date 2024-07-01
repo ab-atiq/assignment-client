@@ -5,7 +5,7 @@ const AllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://assignment-server-ruddy-mu.vercel.app/shoes")
+    fetch("https://assignment-server-vhg5.onrender.com/shoes")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

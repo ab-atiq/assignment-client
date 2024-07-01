@@ -28,20 +28,20 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: () =>
-          fetch("https://assignment-server-ruddy-mu.vercel.app/shoes"),
+          fetch("https://assignment-server-vhg5.onrender.com/shoes"),
       },
       {
         path: "/products",
         element: <ProductsPage />,
         loader: () =>
-          fetch("https://assignment-server-ruddy-mu.vercel.app/shoes"),
+          fetch("https://assignment-server-vhg5.onrender.com/shoes"),
       },
       {
         path: "/products/:id",
         element: <ProductDetails />,
         loader: ({ params }) =>
           fetch(
-            `https://assignment-server-ruddy-mu.vercel.app/shoes/${params.id}`
+            `https://assignment-server-vhg5.onrender.com/shoes/${params.id}`
           ),
       },
       {
@@ -88,7 +88,7 @@ export const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://assignment-server-ruddy-mu.vercel.app/user/get/${params.id}`
+            `https://assignment-server-vhg5.onrender.com/user/get/${params.id}`
           ),
       },
       {
@@ -116,7 +116,7 @@ export const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://assignment-server-ruddy-mu.vercel.app/shoes/${params.id}`
+            `https://assignment-server-vhg5.onrender.com/shoes/${params.id}`
           ),
       },
     ],

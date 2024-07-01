@@ -14,7 +14,7 @@ const AddProducts = () => {
 
     const data = { title, brand, price, description, image_url };
 
-    await fetch("https://assignment-server-ruddy-mu.vercel.app/shoes", {
+    await fetch("https://assignment-server-vhg5.onrender.com/shoes", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

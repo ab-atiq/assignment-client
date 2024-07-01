@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [userInfo, setUserInfo] = useState();
 
   useEffect(() => {
-    fetch(`https://assignment-server-ruddy-mu.vercel.app/user/${user?.email}`)
+    fetch(`https://assignment-server-vhg5.onrender.com/user/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setUserInfo(data));
   }, [user]);
